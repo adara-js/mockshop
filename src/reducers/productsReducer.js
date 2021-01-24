@@ -1,9 +1,6 @@
-export function populateProducts(products) {
-    return {
-        type: "POPULATE_PRODUCTS",
-        payload: products
-    }
-}
+import thunk from "redux-thunk"
+import {populateProducts} from "./src/actions"
+
 
 export default function productsReducer(products, action) {
     switch(action.type) {
